@@ -1,0 +1,107 @@
+/*đặt @media query  phù hợp với mục đích của từng file.*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    header {
+        position: relative;
+
+    }
+    /*căn chỉnh phần banner, chèn hình nền cho banner */
+    .modau {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+        color: #f7f7f7;
+    }
+    
+    #banner {
+        position: relative;
+        background-image: url(./../images/banner.jpg);
+        text-align: center;
+        color: #fff;
+        height: 100vh;  
+        align-self: center;
+        background-size: cover;  
+       
+    }
+    /*căn chỉnh navbar*/
+    .navbar-nav {
+        max-width: 100%;
+    }
+  
+    .nav-link{
+        text-decoration: none;
+        display: none;
+        color: black;
+    }
+    .container {
+        width: 100%;
+    }
+    /*Căn chỉnh phần kinh nghiệm học vấn*/
+    #job-info .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 60px 40px 30px 40px;
+        
+    }
+  
+    /*chung chi giai thuong*/
+    .chungchi-1.row {
+        flex-direction: column;
+      }
+    
+      .col-sm-5,
+      .col-sm-7 {
+        width: 100% !important;
+      }
+    
+      .chungchi-1 img {
+        width: 100%;
+        height: auto;
+      }
+    
+      .chungchi-1-text p:first-child {
+        font-size: 18px;
+      }
+      #certificate .section-title {
+        padding-left: 15px;
+      }
+    
+      .chungchi-1 {
+        padding: 0 15px;
+      }
+    
+      .chungchi-1-text {
+        padding-left: 0px;
+        padding-top: 10px;
+        line-height: 1;
+      }
+    
+/*Căn chỉnh phần dự án*/
+ 
+    
+    .project {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+    }
+    .grid-duan-1,
+    .grid-duan-2,
+    .grid-duan-3 {
+        display: grid;
+        grid-template-rows: 120px 80px 100px auto;
+    }
+    .canhan-1 img {
+        width: 100%;
+    }
+    .icon-1 {
+        display: inline-block;
+    }
+    .icon-2 {
+        padding-left: 70px;
+    }
+    .canhan-3 {
+        display: block;
+    }
+    
+   
+}      

@@ -1,0 +1,166 @@
+/*đặt @media query  phù hợp với mục đích của từng file.*/
+@media screen and (max-width: 767px){
+  * {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+/*căn chỉnh phần banner, chèn hình nền cho banner */
+.modau {
+    position: absolute;
+    top: 18%;
+    left: 44%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    color: #f7f7f7;
+}
+#banner {
+  position: relative;
+  background-image: url(./../images/banner.jpg);
+  text-align: center;
+  color: #fff;
+  height: 250px;  
+  align-self: center;
+  background-size: cover;  
+ 
+}
+/*xây dựng phần navbar*/
+.navbar {
+  height: auto;
+}
+.container{
+  
+  text-decoration: none;
+  color: #000;
+  text-align: start;
+  align-self: stretch;
+  border-collapse: collapse;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px;
+  border-left: solid gray ;
+  color: black;
+  flex-basis: 150px;
+}
+.nav-item {
+
+  width: 100%;
+  color: black;
+}
+.img-item {
+  display: none;
+}
+.container a:hover {
+  cursor: pointer;
+}
+i {
+  color: rgba(60, 182, 222, 0.938);
+}
+/*căn chỉnh phần mục tiêu nghề nghiệp*/
+#mtnn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  margin-bottom: 6rem; 
+
+}
+#personal-info {
+  padding: 20px;
+}
+/*căn chỉnh phần kinh nghiệm học vấn*/
+#job-info .container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6,auto);
+  
+}
+#kn-hv {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+/*căn chỉnh phần chứng chỉ giải thưởng*/
+#certificate h1 {
+  font-size: 32px;
+}
+
+.chungchi {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+}
+
+#certificate .chungchi-1 {
+  grid-template-columns: auto;
+  border: 0;
+  border-bottom: 1px solid #d6c08d;
+  padding: 0 15px;
+}
+
+.chungchi-1 img {
+  width: 100%;
+  height: auto;
+}
+.chungchi-1-text p:first-child {
+  padding-bottom: 5px;
+}
+
+.chungchi-1-text p {
+  margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.chungchi-1-text {
+  padding: 10px 0px 15px 0px;
+}
+
+.chungchi-1:nth-child(3) {
+  padding-top: 20px;
+  margin: 0;
+  border: 0;
+}
+
+.chungchi-1:nth-child(4) {
+  display: none;
+}
+/*căn chỉnh phần dự án*/
+.project {
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+.grid-duan-1,
+.grid-duan-2,
+.grid-duan-3 {
+    display: grid;
+    grid-template-rows: 320px 60px 100px auto;
+}
+.canhan-1 img {
+  width: 100%;
+}
+.icon-1,
+.icon-2 {
+  display: block;
+  }
+.canhan-3 {
+  display: block;
+}
+/*căn chỉnh phần footer*/
+#footer span {
+  display: none;
+}
+
+.phancuoi div:nth-child(2) {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+}

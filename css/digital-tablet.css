@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    display: grid ;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    background-color: #2196F3;
+    gap: 15px;
+  }
+  .item3 {
+    grid-area: auto;
+  }
+  .rounded-circle {
+    width: 52px;
+    height: 52px;
+  }
+}
